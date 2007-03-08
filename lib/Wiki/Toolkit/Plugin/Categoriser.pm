@@ -3,7 +3,7 @@ use strict;
 use Wiki::Toolkit::Plugin;
 
 use vars qw( $VERSION @ISA );
-$VERSION = '0.04';
+$VERSION = '0.05';
 @ISA = qw( Wiki::Toolkit::Plugin );
 
 =head1 NAME
@@ -124,7 +124,12 @@ Returns an array of category names in no particular order.
 sub categories {
     my ($self, %args) = @_;
     my $dbh = $self->datastore->dbh;
-    my $sth = $dbh->prepare( "SELECT metadata_value FROM node INNER JOIN metadata ON (node_id = id) WHERE name = ? AND metadata_type = 'category'" );
+    my $sth = $dbh->prepare( "SELECT metadata_value
+                              FROM node
+                              INNER JOIN metadata
+                                ON ( node.id = metadata.node_id
+                                     AND node.version = metadata.version )
+                              WHERE name = ? AND metadata_type = 'category'" );
     $sth->execute( $args{node} );
     my @categories;
     while ( my ($cat) = $sth->fetchrow_array ) {

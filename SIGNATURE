@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.44.
+signed via the Module::Signature module, version 0.55.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,17 +14,17 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 80f40af3eb594668dd1dbdbc7cad6067f95e9fee Changes
+SHA1 41e70f0220147697e3e5c5e39c7b02dc377d09dd Changes
 SHA1 8089842716facf67104bfd2b00d0bd42adb34f35 MANIFEST
-SHA1 569024ec1bf77577c82c08aac390f0dc7f76c988 META.yml
+SHA1 45db56cbb71bb5371bd5ae94405059885141b85a META.yml
 SHA1 8e1c5d17bc320173c689232c4d90e9e0d6cb9f08 Makefile.PL
-SHA1 6c36961f7b1ff61c74019800826086e4b0602e26 lib/Wiki/Toolkit/Plugin/Categoriser.pm
-SHA1 97125d9dd1f558bb7f2729cb3587931616b09a5d t/categoriser.t
+SHA1 870d7631aaf619682acb682ac6f04e83b3741411 lib/Wiki/Toolkit/Plugin/Categoriser.pm
+SHA1 1bf411c36941891c8137ef0cb31126ff52a2efd1 t/categoriser.t
 SHA1 f557ad2c3dd968a466ab0dadfeb952891d8715d6 t/nested_categories.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
+Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFEZfXdYzuFKFF44qURAkx9AKDdmcR9CN6wB4kGCEojszDLjTx3rgCfeFNH
-60SuNtHzF7OZQvY0GdJ9qH8=
-=znbg
+iD8DBQFF8DfRYzuFKFF44qURAo6cAJ4xl43aONKr8UULfq5i5Jo8vV2IngCePC/p
++3tgKomhNankJtY1ReJsiJ8=
+=DATc
 -----END PGP SIGNATURE-----

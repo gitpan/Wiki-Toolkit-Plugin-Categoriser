@@ -3,7 +3,7 @@ use Wiki::Toolkit::TestLib;
 use Test::More;
 
 my $iterator = Wiki::Toolkit::TestLib->new_wiki_maker;
-plan tests => ( 1 + $iterator->number * 6 );
+plan tests => ( 1 + $iterator->number * 7 );
 
 use_ok( "Wiki::Toolkit::Plugin::Categoriser" );
 
@@ -41,4 +41,15 @@ while ( my $wiki = $iterator->new_wiki ) {
     my @categories = $categoriser->categories( node => "Calthorpe Arms" );
     is_deeply( [ sort @categories ], [ "Pub Food", "Pubs" ],
                "...->categories returns all categories" );
+
+    # Make sure we only look at current category data.
+    my %node_data = $wiki->retrieve_node( "Calthorpe Arms" );
+    $wiki->write_node( "Calthorpe Arms",
+                       "Oh noes, they stopped doing food!",
+                       $node_data{checksum},
+                       { category => [ "Pubs" ] } )
+      or die "Can't write node";
+    @categories = $categoriser->categories( node => "Calthorpe Arms" );
+    is_deeply( \@categories, [ "Pubs" ],
+               "->categories ignores out-of-date data" );
 }

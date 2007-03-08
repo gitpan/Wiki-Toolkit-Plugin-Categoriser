@@ -1,3 +1,6 @@
+0.05    8 March 2007
+        Fix bug - ->categories was picking up out-of-date categories.
+
 0.04    13 May 2006
         Renamed Wiki::Toolkit::Plugin::Categoriser
 
