@@ -1,8 +1,8 @@
 Changes
 MANIFEST
 Makefile.PL
-SIGNATURE
 lib/Wiki/Toolkit/Plugin/Categoriser.pm
 t/categoriser.t
 t/nested_categories.t
 META.yml                                 Module meta-data (added by MakeMaker)
+SIGNATURE                                Public-key signature (added by MakeMaker)

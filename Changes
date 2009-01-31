@@ -1,3 +1,8 @@
+0.06    31 January 2009
+        Explicitly skip tests if no backends configured, to avoid spurious
+        test failure reports.
+        Sign distribution
+
 0.05    8 March 2007
         Fix bug - ->categories was picking up out-of-date categories.
 

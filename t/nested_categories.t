@@ -4,7 +4,11 @@ use Wiki::Toolkit::TestLib;
 use Test::More;
 
 my $iterator = Wiki::Toolkit::TestLib->new_wiki_maker;
-plan tests => ( $iterator->number * 1 );
+if ( $iterator->number ) {
+    plan tests => ( $iterator->number * 1 );
+} else {
+    plan skip_all => "No backends configured.";
+}
 
 while ( my $wiki = $iterator->new_wiki ) {
     print "#\n##### TEST CONFIG: Store: " . (ref $wiki->store) . "\n";

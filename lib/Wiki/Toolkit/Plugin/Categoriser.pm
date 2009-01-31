@@ -3,7 +3,7 @@ use strict;
 use Wiki::Toolkit::Plugin;
 
 use vars qw( $VERSION @ISA );
-$VERSION = '0.05';
+$VERSION = '0.06';
 @ISA = qw( Wiki::Toolkit::Plugin );
 
 =head1 NAME
@@ -156,7 +156,7 @@ The Wiki::Toolkit team (http://www.wiki-toolkit.org/)
 =head1 COPYRIGHT
 
      Copyright (C) 2003-4 Kake Pugh.  All Rights Reserved.
-     Copyright (C) 2006 the Wiki::Toolkit team. All Rights Reserved.
+     Copyright (C) 2006-2009 the Wiki::Toolkit team. All Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
