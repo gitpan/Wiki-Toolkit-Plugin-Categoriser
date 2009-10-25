@@ -14,17 +14,17 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 a37351fcbb47fca11a3a4607377d144a83cd5df9 Changes
+SHA1 f521a258131cbe9ebb8f3d7e4722db8c197eb5d9 Changes
 SHA1 38ef1aefc14281afbd25ad3bd7f0001275ae5186 MANIFEST
-SHA1 fa8a47999e64d3b99ceedc9593ff3be251232495 META.yml
+SHA1 e05b87c6c66881c698815dd1776d06be3cd60910 META.yml
 SHA1 53a49fe85dcb5c87439cf865a94f80170c5af447 Makefile.PL
-SHA1 cc2f96bbb4f3bc221f66f99e9d47f3e9eef39794 lib/Wiki/Toolkit/Plugin/Categoriser.pm
+SHA1 dc56b77b9bfa1d631cef5b7e7801b9889db51603 lib/Wiki/Toolkit/Plugin/Categoriser.pm
 SHA1 1bf411c36941891c8137ef0cb31126ff52a2efd1 t/categoriser.t
 SHA1 51f31ec687aa79b759c086a6a6cf31636e5941e1 t/nested_categories.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iD8DBQFJhLQaYzuFKFF44qURAuD5AKCIndZaf+kWPOWUWdbQiRIaJFXaXQCdFx2x
-VgTHis0XZIvazjcmOk7zTXo=
-=NaQa
+iD8DBQFK5HpIYzuFKFF44qURAm2bAKCvJtY2N4wAy1JhtQOJsN9gwY+v9QCeJ/ZQ
+jVTUwgNNYm28kp/WE4+SBVs=
+=N2E6
 -----END PGP SIGNATURE-----

@@ -1,3 +1,6 @@
+0.07    25 October 2009
+        Add POD tests and fix some broken POD
+
 0.06    31 January 2009
         Explicitly skip tests if no backends configured, to avoid spurious
         test failure reports.

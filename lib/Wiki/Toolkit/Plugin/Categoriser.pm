@@ -3,7 +3,7 @@ use strict;
 use Wiki::Toolkit::Plugin;
 
 use vars qw( $VERSION @ISA );
-$VERSION = '0.06';
+$VERSION = '0.07';
 @ISA = qw( Wiki::Toolkit::Plugin );
 
 =head1 NAME
@@ -137,6 +137,8 @@ sub categories {
     }
     return @categories;
 }
+
+=back
 
 =head1 SEE ALSO
 
